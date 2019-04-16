@@ -8,7 +8,6 @@ class App extends Component {
 
   constructor() {
     super();
-    this.contPlanet();
     this.state = {
       planet: 'unknown',
       population: 'unknown',
@@ -22,7 +21,9 @@ class App extends Component {
 
   }
 
-
+ componentDidMount (){
+  this.contPlanet();
+ }
 
   getPlanet() {
            
