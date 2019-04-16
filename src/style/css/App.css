@@ -4,26 +4,26 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Starjedise";
   src: url("../fonts/Starjedise.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Play";
   src: url("../fonts/Play-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PlayBold";
   src: url("../fonts/Play-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+* {
+  overflow-x: hidden;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 
 label {
   color: #fadb0f;
-  font-family: 'Starjedi';
+  font-family: "Starjedi";
   vertical-align: middle;
 }
 
@@ -63,9 +63,8 @@ label {
   width: 100%;
   height: 40px;
 }
-
 .planet label {
-  font-family: 'Starjedise';
+  font-family: "Starjedise";
   font-size: 1.5rem;
 }
 
@@ -75,7 +74,6 @@ label {
   float: left;
   text-align: center;
 }
-
 .planetImg img {
   border: 1px solid #212121;
 }
@@ -95,9 +93,8 @@ label {
   text-align: left;
   height: 30px;
 }
-
 .divQuest label {
-  font-family: 'PlayBold';
+  font-family: "PlayBold";
   margin-left: 5px;
   color: #464646;
 }
@@ -109,9 +106,8 @@ label {
   text-align: left;
   height: 30px;
 }
-
 .divResp label {
-  font-family: 'Play';
+  font-family: "Play";
   margin-left: 5px;
   color: #fff;
 }
@@ -133,7 +129,6 @@ label {
 .Postfilms {
   float: left;
 }
-
 .Postfilms img {
   border: 1px solid #212121;
 }
@@ -141,7 +136,7 @@ label {
 button {
   background: transparent;
   color: #fadb0f;
-  font-family: 'Starjedi';
+  font-family: "Starjedi";
   width: 300px;
   border: none;
   position: relative;
@@ -151,40 +146,96 @@ button {
   text-decoration: none;
   z-index: 1;
 }
-
 button:before, button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-
 button:before {
   border: 2px solid #fadb0f;
   border-radius: 5px;
   z-index: -1;
 }
-
 button:after {
   border: 2px solid #bdddff;
   border-radius: 5px;
   z-index: -2;
 }
-
 button:hover .link-inner {
   animation: glitchy 0.3s ease 1;
 }
-
 button:hover:before {
   animation: glitchy 0.3s ease 0.3s infinite;
 }
-
 button:hover:after {
   animation: glitchy 0.3s ease infinite reverse;
 }
 
+@media screen and (max-width: 500px) {
+  .App header img {
+    width: 99%;
+    height: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .content {
+    width: 99%;
+    margin: 0px;
+  }
+
+  .planetImg {
+    width: 99%;
+    margin: 0px;
+  }
+
+  .planetDesc {
+    width: 99%;
+    margin: 0px;
+  }
+
+  button {
+    width: 99%;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .App header img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .content {
+    width: 95%;
+    margin: 0px;
+  }
+
+  .planetImg {
+    width: 95%;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .planetDesc {
+    width: 95%;
+    width: 100%;
+    margin: 0px;
+  }
+
+  button {
+    width: 95%;
+    margin: 0px;
+  }
+}
 @keyframes sable {
   from {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
@@ -193,7 +244,6 @@ button:hover:after {
     box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228DFF, 0 0 17.5px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 37.5px #228DFF;
   }
 }
-
 @keyframes glitchy {
   0% {
     transform: translate(-2px, 2px);
@@ -211,7 +261,6 @@ button:hover:after {
     transform: translate(-2px, 2px);
   }
 }
-
 @keyframes line-glitchy {
   0% {
     transform: translate(-1px, 1px);
@@ -229,3 +278,5 @@ button:hover:after {
     transform: translate(-1px, 1px);
   }
 }
+
+/*# sourceMappingURL=App.css.map */

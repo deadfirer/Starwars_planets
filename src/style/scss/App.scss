@@ -20,6 +20,11 @@ $radius: 5px;
 @include font('Play', '../fonts/Play-Regular');
 @include font('PlayBold', '../fonts/Play-Bold');
 
+* {
+  //box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 body {
   background: $background;
 }
@@ -188,6 +193,59 @@ button {
       }
   }
 }
+
+@media screen and (max-width:500px){
+  $width: 99%;
+  $height: 100%;
+
+  .App header img {
+    width: $width;
+    height: 100%;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  @each $class in '.content','.planetImg','.planetDesc', 'button' {
+    
+    #{$class} {
+     width: $width;
+     margin: 0px;
+    }
+
+  }
+}
+
+@media screen and (max-width:1060px){
+  $width: 95%;
+  $height: 100%;
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .App header img {
+    width: 40%;
+    height: 40%;
+  }
+
+  @each $class in '.content','.planetImg','.planetDesc', 'button' {
+    
+    #{$class} {
+
+      width: $width;
+      
+     @if $class == '.planetImg' or $class == '.planetDesc' {
+      width: $width + 5;
+     }
+      
+     margin: 0px;
+    }
+
+  }
+}
+
 
 @keyframes sable {
   from {
