@@ -1,5 +1,4 @@
 import React from 'react';
-import { request } from 'https';
 
 const Films = ({title}) => (
     <div className="Postfilms">
