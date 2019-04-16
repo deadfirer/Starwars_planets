@@ -15,7 +15,7 @@ class App extends Component {
       climate: 'unknown',
       terrain: 'unknown',
       nfilms: [],
-      nPlanets: 0,
+      nPlanets: 1,
       arrayTitle: ['']
     }
     this.getPlanet = this.getPlanet.bind(this);
@@ -27,9 +27,7 @@ class App extends Component {
   getPlanet() {
            
     const numPla = Math.floor(Math.random() * (this.state.nPlanets - 1) + 1);
-    
-    console.log(numPla);
-    
+        
     fetch(`https://swapi.co/api/planets/${numPla}`)
       .then(res => res.json())
       .then(
