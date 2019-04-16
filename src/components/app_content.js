@@ -7,7 +7,7 @@ const AppContent = ({ planet, population, climate, terrain, nfilms, arrayTitle }
             <label>{planet}</label>
         </div>
         <div className='planetImg'>
-            <img src={require(`../img/planets/${planet}.jpg`)} alt='planets' onError={require('../img/planets/unknown.jpg')} />
+            <img src={require(`../img/planets/${planet}.jpg`)} alt='planets'/>
         </div>
 
         <div className='planetDesc'>
