@@ -234,10 +234,12 @@ button {
     
     #{$class} {
 
-      width: $width;
+      
       
      @if $class == '.planetImg' or $class == '.planetDesc' {
       width: $width + 5;
+     }@else {
+      width: $width;
      }
       
      margin: 0px;
