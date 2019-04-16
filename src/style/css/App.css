@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Starjedi";
+  src: url("../fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Starjedise";
+  src: url("../fonts/Starjedise.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url("../fonts/Play-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayBold";
+  src: url("../fonts/Play-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #000;
+}
+
+.App {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+label {
+  color: #fadb0f;
+  font-family: 'Starjedi';
+  vertical-align: middle;
+}
+
+.App header img {
+  width: 30%;
+  height: 30%;
+}
+
+.content {
+  display: table;
+  background: #00070b;
+  width: 1012px;
+  margin: 0px auto;
+  padding: 5px;
+  animation: sable 1.5s ease-in-out infinite alternate;
+  border-radius: 5px;
+}
+
+.planet {
+  position: relative;
+  background: #000;
+  width: 100%;
+  height: 40px;
+}
+
+.planet label {
+  font-family: 'Starjedise';
+  font-size: 1.5rem;
+}
+
+.planetImg {
+  pointer-events: none;
+  width: 320px;
+  float: left;
+  text-align: center;
+}
+
+.planetImg img {
+  border: 1px solid #212121;
+}
+
+.planetDesc {
+  width: 692px;
+  font-size: 0.8rem;
+  color: #fff;
+  display: table;
+  margin-left: 15px;
+}
+
+.divQuest {
+  width: 20%;
+  background: #fff;
+  float: left;
+  text-align: left;
+  height: 30px;
+}
+
+.divQuest label {
+  font-family: 'PlayBold';
+  margin-left: 5px;
+  color: #464646;
+}
+
+.divResp {
+  width: 80%;
+  float: left;
+  background: #212121;
+  text-align: left;
+  height: 30px;
+}
+
+.divResp label {
+  font-family: 'Play';
+  margin-left: 5px;
+  color: #fff;
+}
+
+.divFilms {
+  width: 100%;
+  float: left;
+}
+
+.border, .divQuest, .divResp {
+  border-bottom: 5px solid #00070b;
+}
+
+.next {
+  margin-top: 50px;
+}
+
+.Postfilms {
+  float: left;
+}
+
+.Postfilms img {
+  border: 1px solid #212121;
+}
+
+button {
+  background: transparent;
+  color: #fadb0f;
+  font-family: 'Starjedi';
+  width: 300px;
+  border: none;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  z-index: 1;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button:before {
+  border: 2px solid #fadb0f;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+button:after {
+  border: 2px solid #bdddff;
+  border-radius: 5px;
+  z-index: -2;
+}
+
+button:hover .link-inner {
+  animation: glitchy 0.3s ease 1;
+}
+
+button:hover:before {
+  animation: glitchy 0.3s ease 0.3s infinite;
+}
+
+button:hover:after {
+  animation: glitchy 0.3s ease infinite reverse;
+}
+
+@keyframes sable {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #228DFF, 0 0 17.5px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 37.5px #228DFF;
+  }
+}
+
+@keyframes glitchy {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+
+@keyframes line-glitchy {
+  0% {
+    transform: translate(-1px, 1px);
+  }
+  25% {
+    transform: translate(-1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 1px);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}
