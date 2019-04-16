@@ -1,3 +1,8 @@
+Sobre o App
+
+Observação inicial:
+Para a primeira execução caso ocorra um erro, forçar uma alteração e copilar o App.js e app_content.js;
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
