@@ -51,6 +51,7 @@ $colorContent:#00070b;
   display: table;
   background:$colorContent;
   width: 1012px;
+  height: 400px;
   margin: 0px auto;
   padding: 5px;
   animation: sable 1.5s ease-in-out infinite alternate;
@@ -207,7 +208,11 @@ button {
     box-sizing: border-box;
   }
 
-  @each $class in '.content','.planetImg','.planetDesc', 'button' {
+  .divFilms{
+    margin: 0;
+  }
+
+  @each $class in '.content','.planetImg','.planetDesc', 'button', '.Postfilms' {
     
     #{$class} {
      width: $width;
