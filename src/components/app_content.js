@@ -1,5 +1,6 @@
 import React from 'react';
 import Films from './films';
+import PropTypes from 'prop-types';
 
 const AppContent = ({ planet, population, climate, terrain, nfilms, arrayTitle }) => (
     <div className='content'>
@@ -28,6 +29,15 @@ const AppContent = ({ planet, population, climate, terrain, nfilms, arrayTitle }
 
 );
 
+
+AppContent.propTypes = {
+    planet : PropTypes.string.isRequired,
+    population : PropTypes.string.isRequired,
+    climate : PropTypes.string.isRequired,
+    terrain : PropTypes.string.isRequired,
+    nfilms : PropTypes.array.isRequired, 
+    arrayTitle : PropTypes.array.isRequired
+}
 
 
 export default AppContent;
