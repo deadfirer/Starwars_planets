@@ -19,8 +19,8 @@ const AppContent = ({ planet, population, climate, terrain, nfilms, arrayTitle }
             <div className='divResp'><label>{terrain}</label></div>
             <div className='divFilms'><label>Feature in {nfilms.length} films</label></div>
             <div className='divFilms'>
-                {nfilms.length > 0 ? arrayTitle.map((title) => (
-                    title ? <Films title={title} /> : ''
+                {nfilms.length > 0 ? arrayTitle.map((title,index) => (
+                    title ? <span key={index}><Films title={title}/></span>: ''
                 )) : ''}
             </div>
         </div>
