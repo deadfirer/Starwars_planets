@@ -1,7 +1,10 @@
-Sobre o App
+STAR WARS PLANETS 
 
-Observação inicial:
-Para a primeira execução caso ocorra um erro, forçar uma alteração e copilar o App.js e app_content.js;
+REACT - SASS
+
+Sobre 
+
+Sistema que busca um planeta aleatorio e exibe informações do mesmo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
