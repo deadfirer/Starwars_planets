@@ -43,8 +43,8 @@
 <!--* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)-->
-* [License](#license)
-<!--* [Contact](#contact)
+<!--* [License](#license)
+* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)-->
 
 
@@ -93,6 +93,3 @@ yarn
 ```sh
 yarn start
 ```
-
-## Licença 
-This project is under license (your license) - see the [LICENSE.md] file (https://github.com/deadfire/Starwars-planets/licenca) for details.
