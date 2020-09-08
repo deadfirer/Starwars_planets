@@ -60,7 +60,7 @@ When doing the search he returns the data of the planet and in which films he ap
 
 ### Built With
 
-![](https://img.shields.io/badge/Platform-Node.Js-blue?style=flat&logo=node.jst&logoColor=white&color=66d63a)
+![](https://img.shields.io/badge/Platform-Node.Js-blue?style=flat&logo=node-dot-jst&logoColor=white&color=66d63a)
 ![](https://img.shields.io/badge/Platform-Yarn-blue?style=flat&logo=yarn&logoColor=white&color=2b9fbc)
 ![](https://img.shields.io/badge/Code-ReactJS-blue?style=flat&logo=react&logoColor=white&color=2b9fbc)
 ![](https://img.shields.io/badge/Code-JavaScript-blue?style=flat&logo=javascript&logoColor=white&color=2b9fbc)
