@@ -29,7 +29,7 @@ class App extends Component {
            
     const numPla = Math.floor(Math.random() * (this.state.nPlanets - 1) + 1);
         
-    fetch(`https://swapi.co/api/planets/${numPla}`)
+    fetch(`https://swapi.dev/api/planets/${numPla}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -65,7 +65,7 @@ class App extends Component {
 
   contPlanet() {
 
-    fetch('https://swapi.co/api/planets')
+    fetch('https://swapi.dev/api/planets')
     .then(res => res.json())
     .then(
       (result) => {
