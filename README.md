@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/deadfirer/Starwars-planets">
-    <img src="src/img/logoH.png" alt="Logo" width="200px">
+    <img src="src/img/logoH.png" alt="Logo" width="350px">
   </a>
 
   <h3 align="center">Star Wars Planets (Challenge of B2W)</h3>
